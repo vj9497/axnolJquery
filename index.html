@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="cover">
+    <div class="container">
+      <div class="left-pane">
+        <h3>Pages <img src="images/plus.png"/></h3>
+        <ul class="list">
+          <li><a href="#" data-detail="Shared Plesk Detail" data-content="Shared Plesk Content" rel="page1">Shared Plesk</a><img src="images/delete.png"/></li>
+          <li><a href="#" data-detail="Shared Cpanel Detail" data-content="Shared Cpanel Content" rel="page2">Shared Cpanel</a><img src="images/delete.png"/></li>
+          <li><a href="#" data-detail="Shared Windows Detail" data-content="Shared Windows Content" rel="page3">Shared Windows</a><img src="images/delete.png"/></li>
+          <li><a href="#" data-detail="Resellar C-panel Detail" data-content="Resellar C-panel Content" rel="page4">Resellar C-panel</a><img src="images/delete.png"/></li>
+          <li><a href="#" data-detail="Cpanel Master Detail" data-content="Cpanel Master Content" rel="page5">Cpanel Master</a><img src="images/delete.png"/></li>
+          <li><a href="#" data-detail="Dedicated Plesk Detail" data-content="Dedicated Plesk Content" rel="page6">Dedicated Plesk</a><img src="images/delete.png"/></li>
+          <li><a href="#" data-detail="" data-content="Packages Content" rel="page7">Packages</a><img src="images/delete.png"/></li>
+        </ul>
+
+        <div class="filter">
+          <span>Filter:</span>
+          <div class="filter-inside"><input type="text" onkeyup="axonl.keyup($(this))" id="filter" name="filter" value=""/> <img src="images/delete.png" onClick="$(this).prev().val('')" style="display:none"/></div>
+
+          </div>
+        </div>
+        <div class="right-pane">
+          <ul>
+            <li class="active"><span>Page Details</span></li>
+            <li><span>Page Content</span></li>
+          </ul>
+          <div id="content"><span>Click on the list of pages</span></div>
+          
+        </div>
+      </div>
+    </div>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
+</html>
